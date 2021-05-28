@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestao academica</title>
+</head>
+<body>
+
+    <h4 main style= "background-color: #dbe72d">SISTEMA DE GESTÃO ACADÊMICA</h3>
+    <h4>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h3>
+
+
+    <form action="salvar" method="POST">
+
+        <fieldset style="border:0px">
+
+            <label>Login</label>
+            <input type="email" placeholder="E-mail"><br>
+            <label>Senha</label>
+            <input type="password" placeholder="Senha"><br>
+        </fieldset>
+
+        <fieldset style="border:0px">
+            <Label>Status</Label>
+              <select>
+                <option value="1">Ativo</option>
+                <option value="2">Inativo</option>
+              </select>
+        </fieldset>
+
+
+
+        <fieldset style="border:0px">
+            <legend>Tipo</legend>
+            <label><input type="radio" name="Sim" value="1"> Tecnico</label>
+            <label><input type="radio" name="Sim" value="2"> Professor </label>
+            <label><input type="radio" name="Sim" value="3"> Aluno </label>
+        </fieldset>
+
+        <fieldset style="border:0px">
+            <label>Data Criação</label>
+            <input type="date"  placeholder="Data">
+        </fieldset>
+
+        <fieldset style="border:0px">
+            <legend>Perfil</legend>
+            <label><input type="radio" name="Sim" value="1"> Convidado</label>
+            <label><input type="radio" name="Sim" value="2"> Administrador </label>
+            <!-- para ter opção de selecionar só um, coloco o value diferente -->
+        </fieldset>
+
+        <fieldset style="border:0px">
+            <label>Data Criação</label>
+            <input type="date"  placeholder="Data">
+        </fieldset>
+
+        <fieldset style="border:0px">
+            <legend>Módulos</legend>
+            <sup><input type="checkbox"> Compras </sup>
+            <sup><input type="checkbox"> Biblioteca </sup>
+            <sup><input type="checkbox"> Acadêmico </sup>
+            <br>
+            <sub><input type="checkbox"> Documentação </sub>
+            <sub><input type="checkbox"> Recursos Humanos </sub>
+          </fieldset>
+
+        <fieldset style="border:0px">
+            <legend>Módulos</legend>
+            <sup><input type="checkbox"> Compras </sup>
+            <sup><input type="checkbox"> Biblioteca </sup>
+            <sup><input type="checkbox"> Acadêmico </sup>
+            <br>
+            <sub><input type="checkbox"> Documentação </sub>
+            <sub><input type="checkbox"> Recursos Humanos </sub>
+          </fieldset>
+
+        <input type="submit" value="Cadastrar">     
+        <input type="submit" value="Excluir">
+
+    </form>
+    
+</body>
+</html>
